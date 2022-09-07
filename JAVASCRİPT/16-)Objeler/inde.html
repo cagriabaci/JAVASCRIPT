@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var isim="cagri";
+       var yas=28;
+       var gozRengi="yesil";
+
+       var insan1 = {
+        isim :"cagri",
+        yas : 28,
+        gozRengi : "yesil"
+       }
+      function insan(isim,yas,gozRengi){
+        this.isim = isim;
+        this.yas =  yas;
+        this.gozRengi = gozRengi;
+        this.isimdegistir = function (yenisim){
+            this.isim = yenisim
+        }
+        this.dogumyılı = dogumyılıhesapla;
+
+      }
+       function dogumyılıhesapla(){
+        return 2022-this.yas
+       }
+      var i1 = new insan("Cagri",28,"yesil");
+        document.write(i1.isim+" "+i1.yas+" "+ i1.gozRengi+"<br>")
+
+        i1.isimdegistir("mehmet");
+        document.write(i1.isim+" " + i1.yas+ " " + i1.gozRengi+" "+ i1.dogumyılı());
+      
+      
+    </script>
+</body>
+</html>

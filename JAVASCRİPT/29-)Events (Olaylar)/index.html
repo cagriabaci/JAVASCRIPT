@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    <img src="img/ulusal.jpg" alt="">
+    <div id="id">Cagri Abaci</div>-->
+    <p onclick="saatBasla()">Tarih</p>
+    <p></p>
+    <input class="inputCSS" type="text" value="Bir isim giriniz!">
+    <script>
+     var input = document.getElementsByClassName("inputCSS")[0];
+     var tarihParagrafi = document.getElementsByTagName("p")[1];
+
+     function saatBasla(){
+        setInterval(tarihiGoster,1000);
+     }
+     function tarihiGoster(){
+        var tarih = new Date();
+        tarihParagrafi.innerHTML= tarih.getHours() +":"+tarih.getMinutes()+":"+tarih.getSeconds();
+     }
+     /*input.onchange = function(){
+        input.value= input.value.toUpperCase();
+        };
+
+        input.onkeyup = function(){
+        input.value = input.value.toUpperCase();
+        };*/
+        /*input.onblur = function(){
+            input.value = "degisti";
+        };
+        input.onfocus = function(){
+            input.value = "focusladı";
+        };*/
+       
+        
+       /*var divimiz = document.getElementById("id");
+      divimiz.onmouseover = function () {
+        divimiz.innerHTML = "mouse üzerine geldi";
+      };
+      divimiz.onmouseout = function () {
+        divimiz.innerHTML = "cagri abaci";
+      };
+      divimiz.onmousedown = function () {
+        divimiz.innerHTML = "tıklama anı";
+      };
+      divimiz.onmouseup = function(){
+        divimiz.innerHTML = "mousedan elimizi kaldırdık.";
+      };*/
+
+
+      //var resim = document.getElementsByTagName("img")[0];
+
+      /*divimiz.onclick = function(){
+            divimiz.innerHTML = "Dive Tıklandı!";
+        }
+
+        resim.onclick = function(){
+        resim.src="img/kıs.jpg";
+        }*/
+
+      //Onload
+      //Onclick
+      //Onchange
+      //Onkeyup
+    </script>
+  </body>
+</html>

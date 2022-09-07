@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1{
+            color: red;
+            width: 50%;
+            border: 1px solid green;
+            text-align: center;
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+<body>
+    <p class="p1" onclick="ozellikDegistir()">
+        Cagri Abaci
+    </p>
+    <script>
+       function ozellikDegistir(){
+        var paragraf = document.getElementsByClassName("p1")[0];
+        paragraf.style.color = "blue";
+        paragraf.style.background ="yellowgreen";
+       }
+    </script>
+</body>
+</html>
